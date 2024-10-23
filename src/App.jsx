@@ -1,7 +1,13 @@
+import { Route, Routes } from "react-router-dom";
+import Home from "./components/Home";
+
 export default function App() {
   return (
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+    <div className=" w-screen h-screen overflow-hidden bg-[#1f1e24] flex">
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+
+    </div>
   )
 }
