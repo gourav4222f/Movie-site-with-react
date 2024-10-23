@@ -6,7 +6,7 @@ export default function Header({ data }) {
     return (
         <div
             style={{
-                background: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://image.tmdb.org/t/p/poriginal/${data.backdrop_path || data.poster_path || data.profile_path || data.logo_path})`,
+                background: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://image.tmdb.org/t/p/original/${data.backdrop_path || data.poster_path || data.profile_path || data.logo_path})`,
                 backgroundSize: "cover",
                 backgroundPosition: "center"
             }}
