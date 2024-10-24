@@ -9,7 +9,7 @@ export default function Dropdown({ title, options, func }) {
                 </option>
                 {options?.map((item, index) => (
                     // Set the value to the item instead of the index
-                    <option key={index} value={item}>{item.toUpperCase()}</option>
+                    <option key={index} value={item}>{item.toUpperCase().replace('_', ' ')}</option>
                 ))}
             </select>
         </div>
