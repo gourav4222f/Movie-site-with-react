@@ -57,7 +57,7 @@ export default function Home() {
                 <div className='mb-5 flex justify-between items-center px-5 pt-5'>
                     <h1 className='text-zinc-400 text-3xl font-semibold'>Trending</h1>
 
-                    <Dropdown title="filter" options={['all', 'movie', 'tv']} func={setCategory} />                                       
+                    <Dropdown title="filter" options={['all', 'movie', 'tv']} func={(e) => { setCategory(e) }} />                                       
                 </div>
                 <HorizontalCards data={trending} />
             </div>

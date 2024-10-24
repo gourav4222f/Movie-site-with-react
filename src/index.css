@@ -47,13 +47,14 @@ select::-ms-expand {
     width: 20em;
     height: 3em;
     line-height: 3;
-    background: #1f1e24;
+    background: #6556Cd;
     overflow: hidden;
     border-radius: .25em;
+    border: 1px solid #6556Cd;
 }
 
 select:hover {
-    border-color: #6556Cd;
+    border-color: #000000;
 }
 
 .select::after {
@@ -62,12 +63,14 @@ select:hover {
     top: 0;
     right: 0;
     padding: 0 1em;
-    background: #6556Cd;
+    background: #6556Cd;    
     cursor: pointer;
     pointer-events: none;
+    border: 1px solid #6556Cd;
     transition: .25s all ease;
 }
 
 .select:hover::after {
-    color: #000000;
+    color: #6556Cd;    
+    background-color: #1f1e24;
 }
